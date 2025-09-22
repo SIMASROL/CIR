@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CIRQLE - Student Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <style>
         * {
             margin: 0;
@@ -477,11 +479,11 @@
         <div class="user-info">
             <div class="avatar">AS</div>
             <div class="user-details">
-                <h3>Ahmad Syahrul</h3>
-                <p>Teknik Informatika</p>
+                <h3>Masrul Hadi</h3>
+                <p>Teknologi Informasi</p>
             </div>
         </div>
-        <button class="settings-icon">⚙️</button>
+        <span class="material-icons">settings</span>
     </div>
 
     <!-- Content -->
@@ -629,17 +631,32 @@
             <div class="card">
                 <div class="profile-header">
                     <div class="profile-avatar">MH</div>
-                    <div class="profile-name">Masrul Hadii</div>
+                    <div class="profile-name">Masrul Hadi</div>
                     <div class="profile-email">masrulhadil@gmail.com</div>
                     <div class="profile-email">NIM: 240705068</div>
                 </div>
                 
                 <div class="profile-actions">
-                    <button class="btn btn-secondary">✏️ Edit Profile</button>
-                    <button class="btn btn-secondary">👤Settings</button>
-                    <button class="btn btn-secondary">📊 Riwayat Laporan</button>
-                    <button class="btn btn-secondary">🔔 Notifikasi</button>
-                    <button class="btn btn-primary">🚪 Logout</button>
+                    <button class="btn btn-secondary">
+  <span class="material-symbols-outlined">edit</span> Edit Profile
+</button>
+
+<button class="btn btn-secondary">
+  <span class="material-symbols-outlined">person</span> Settings
+</button>
+
+<button class="btn btn-secondary">
+  <span class="material-symbols-outlined">bar_chart</span> Riwayat Laporan
+</button>
+
+<button class="btn btn-secondary">
+  <span class="material-symbols-outlined">notifications</span> Notifikasi
+</button>
+
+<button class="btn btn-primary">
+  <span class="material-symbols-outlined">logout</span> Logout
+</button>
+
                 </div>
             </div>
         </div>
@@ -648,19 +665,19 @@
     <!-- Bottom Navigation -->
     <div class="bottom-nav">
         <button class="nav-item active" onclick="switchTab('home', this)">
-            <div class="nav-icon">🏠</div>
+            <span class="material-symbols-outlined">home</span>
             <div class="nav-label">Home</div>
         </button>
         <button class="nav-item" onclick="switchTab('laporkan', this)">
-            <div class="nav-icon">📝</div>
+            <span class="material-symbols-outlined">edit_note</span>
             <div class="nav-label">Laporkan</div>
         </button>
         <button class="nav-item" onclick="switchTab('berita', this)">
-            <div class="nav-icon">📰</div>
+            <span class="material-symbols-outlined">article</span>
             <div class="nav-label">Berita</div>
         </button>
         <button class="nav-item" onclick="switchTab('profile', this)">
-            <div class="nav-icon">⚙️</div>
+            <span class="material-symbols-outlined">settings</span>
             <div class="nav-label">Setting</div>
         </button>
     </div>
@@ -820,5 +837,4 @@
         });
     </script>
 </body>
-
 </html>
